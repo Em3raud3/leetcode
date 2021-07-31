@@ -1,12 +1,9 @@
-from collections import deque
+s = "babad"
 
-mat = [[0, 0, 0],
-       [0, 1, 0],
-       [1, 1, 1]]
 
-queue = deque()
+def search_from_middle(str, left, right):
+    if not str or left > right:
+        print(0)
+        exit()
 
-for i, row in enumerate(mat):
-    print(i)
-
-print()
+    while left
