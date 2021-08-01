@@ -1,37 +1,61 @@
-str = "aba"
+grid = [["1", "0", "1", "1", "1"], [
+    "1", "0", "1", "0", "1"], ["1", "1", "1", "0", "1"]]
+m = len(grid)
+n = len(grid[0])
+island = 0
+visited = []
+
+for i in range(m):
+    visited.append([False for _ in range(n)])
 
 
-def expand_from_middle(s, left, right):
+def check_adjacent(row, col, table, visitation):
+    #! Check Right
+    try:
+        if table[row][col + 1] and table[row][col + 1] == "1":
+            table[row][col + 1] = "0"
+            check_adjacent(row, col + 1, table, visitation)
+    except Exception:
+        pass
 
-    if not s or left > right:
-        return 0
+    #! Check Down
+    try:
+        if table[row + 1][col] and table[row + 1][col] == "1":
+            table[row + 1][col] = "0"
+            check_adjacent(row + 1, col, table, visitation)
+    except Exception:
+        pass
 
-    while left >= 0 and right < len(s) and s[left] == s[right]:
-        left -= 1
-        right += 1
+    #! Check Left
+    try:
+        if visitation[row][col - 1] == False and col != 0:
+            if table[row][col - 1] == "1":
+                table[row][col - 1] = "0"
+                check_adjacent(row, col - 1, table, visitation)
 
-    return(right - left - 1)
+    except Exception:
+        pass
+
+        #! Check Left
+    try:
+        if visitation[row - 1][col] == False and row != 0:
+            if table[row - 1][col] == "1":
+                table[row - 1][col] = "0"
+                check_adjacent(row - 1, col, table, visitation)
+    except Exception:
+        pass
 
 
-maxL = 0
-mStr = ""
-mid = None
+if not grid:
+    print(0)
+    exit()
 
-for i in range(len(str)):
-    l1 = expand_from_middle(str, i, i)
-    l2 = expand_from_middle(str, i, i + 1)
-    l = max(l1, l2)
+for i in range(m):
+    for j in range(n):
+        if grid[i][j] == "1":
+            island += 1
+            visited[i][j] = True
+            check_adjacent(i, j, grid, visited)
 
-    if l > maxL:
-        mid = i
-        maxL = l
 
-if maxL % 2 != 0:
-    left = mid - int(maxL/2)
-    right = mid + int(maxL/2) + 1
-    return(str[left:right])
-
-else:
-    left = mid - (int(maxL/2)) + 1
-    right = mid + (int(maxL/2) + 1)
-    return(str[left:right])
+print(island)
