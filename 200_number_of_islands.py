@@ -36,7 +36,7 @@ class Solution:
             except Exception:
                 pass
 
-                #! Check Left
+                #! Check Up
             try:
                 if visitation[row - 1][col] == False and row != 0:
                     if table[row - 1][col] == "1":
