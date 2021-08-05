@@ -3,8 +3,13 @@ class Solution:
 
         s = list(s)
         s.reverse()
-        roman = {"I": 1, "V": 5, "X": 10, "L": 50,
-                 "C": 100, "D": 500, "M": 1000}
+        roman = {"I": 1,
+                 "V": 5,
+                 "X": 10,
+                 "L": 50,
+                 "C": 100,
+                 "D": 500,
+                 "M": 1000}
 
         index = roman[s[0]]
         sum = 0
