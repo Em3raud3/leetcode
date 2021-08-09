@@ -20,7 +20,6 @@ class Solution:
 
         current = head
         while t > 1:
-            print(current.val)
             current = current.next
             t -= 1
 
