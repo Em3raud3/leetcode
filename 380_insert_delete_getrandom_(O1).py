@@ -46,5 +46,5 @@ class RandomizedSet(object):
         Get a random element from the set.
         :rtype: int
         """
-        target = self.rarr[random.randint(0,len(self.rarr) - 1)]
-        return target
+        
+        return random.choice(self.rarr)
