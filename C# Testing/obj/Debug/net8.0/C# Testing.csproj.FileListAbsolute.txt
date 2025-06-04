@@ -1,0 +1,15 @@
+/home/emeraude/Code/leetcode/C# Testing/bin/Debug/net8.0/C# Testing
+/home/emeraude/Code/leetcode/C# Testing/bin/Debug/net8.0/C# Testing.deps.json
+/home/emeraude/Code/leetcode/C# Testing/bin/Debug/net8.0/C# Testing.runtimeconfig.json
+/home/emeraude/Code/leetcode/C# Testing/bin/Debug/net8.0/C# Testing.dll
+/home/emeraude/Code/leetcode/C# Testing/bin/Debug/net8.0/C# Testing.pdb
+/home/emeraude/Code/leetcode/C# Testing/obj/Debug/net8.0/C# Testing.GeneratedMSBuildEditorConfig.editorconfig
+/home/emeraude/Code/leetcode/C# Testing/obj/Debug/net8.0/C# Testing.AssemblyInfoInputs.cache
+/home/emeraude/Code/leetcode/C# Testing/obj/Debug/net8.0/C# Testing.AssemblyInfo.cs
+/home/emeraude/Code/leetcode/C# Testing/obj/Debug/net8.0/C# Testing.csproj.CoreCompileInputs.cache
+/home/emeraude/Code/leetcode/C# Testing/obj/Debug/net8.0/C# Testing.sourcelink.json
+/home/emeraude/Code/leetcode/C# Testing/obj/Debug/net8.0/C# Testing.dll
+/home/emeraude/Code/leetcode/C# Testing/obj/Debug/net8.0/refint/C# Testing.dll
+/home/emeraude/Code/leetcode/C# Testing/obj/Debug/net8.0/C# Testing.pdb
+/home/emeraude/Code/leetcode/C# Testing/obj/Debug/net8.0/C# Testing.genruntimeconfig.cache
+/home/emeraude/Code/leetcode/C# Testing/obj/Debug/net8.0/ref/C# Testing.dll
